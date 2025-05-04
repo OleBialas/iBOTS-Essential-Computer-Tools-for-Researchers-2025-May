@@ -41,7 +41,7 @@ follow the instructions below to install Miniforge.
 1.  Download the Miniforge installer for Windows from [Miniforge
     releases](https://github.com/conda-forge/miniforge/releases).
 2.  Open and proceed through the installer with the default settings.
-3.  To verify your installation, open the program `Minforge Prompt` and
+3.  To verify your installation, open the program `Miniforge Prompt` and
     print the version of your Conda installation by typing:
 
 ``` bash
@@ -117,10 +117,10 @@ environment
 
 ## Managing Packages with Conda
 
-Conda environment allow us to install libraries and dependencies
+Conda environments allow us to install libraries and dependencies
 specific to each project. This helps avoid the challenges of “dependency
 hell” where incompatible package versions interfere with each other.
-Conda also allows us to install non-Python packagesm providing great
+Conda also allows us to install non-Python packages, providing great
 flexibility and power, especially for complex data workflows involving
 multiple languages.
 
@@ -217,7 +217,7 @@ can access packages in both repositories!
 
 Please note that combining two package managers, `pip` and `conda`
 within the same environment can lead to conflicts if they manage
-dependencies differently. Thus, it is a good pratice to stick mostly to
+dependencies differently. Thus, it is a good practice to stick mostly to
 `conda` and only use `pip` if needed.
 
 <table>
@@ -243,7 +243,7 @@ dependencies differently. Thus, it is a good pratice to stick mostly to
 </tr>
 <tr>
 <td><code>pip uninstall mypackage</code></td>
-<td>Install the <code>mypackage</code></td>
+<td>Uninstall <code>mypackage</code> from the current environment</td>
 </tr>
 </tbody>
 </table>
@@ -274,7 +274,7 @@ again.
 
 Often, we would like to reproduce an environment across multiple
 computers and potentially share it with our collaborators. With Conda,
-we can `export` an evironment, which creates a file that lists all of
+we can `export` an environment, which creates a file that lists all of
 the packages that are installed with their exact version. With this
 file, we can create an exact replication of the environment, even after
 we deleted it or moved to a different setup.

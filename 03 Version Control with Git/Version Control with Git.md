@@ -102,7 +102,7 @@ back to “Changes”</td>
 ------------------------------------------------------------------------
 
 <span class="theorem-title">**Exercise 1**</span> Create a new folder
-for your Git repository and open this folder in a new VSCode Window.
+for your Git repository and open this folder in a new VSCode window.
 
 <span class="theorem-title">**Exercise 2**</span> Initialize a Git
 repository in this folder.
@@ -130,19 +130,19 @@ again.
 The staged changes are still only temporary. To create a more permanent
 snapshot of your project, you need to save the staged changes using a
 `commit`. A commit records a snapshot of your project at a particular
-time described by a `commit message`. Essentially, your project will be
-a series of commits and the changes committed can be accessed via commit
-history.
+time described by a commit message. Essentially, your project will be a
+series of commits and the changes committed can be accessed via the
+commit history.
 
 In Git, each commit has a unique **commit hash**, which is a long ID
 that helps track changes. Commits are saved in order, creating a history
 of changes in the project. You can see past commits using `git log`,
-which shows the commit hash, message, and time of each commit. **Typical
-workflow would be that you *stage* any change you make to the files in
-the temporary staging area and once you are happy with the changes you
-have made, you *commit* them**. The point where you **stage** and
-**commit** are up to you. This section covers committing changes, adding
-messages, and viewing commit history.
+which shows the commit hash, message, and time of each commit. **A
+typical workflow would be that you *stage* any change you make to the
+files in the temporary staging area and once you are happy with the
+changes you have made, you *commit* them**. The point where you
+**stage** and **commit** are up to you. This section covers committing
+changes, adding messages, and viewing commit history.
 
 <table>
 <colgroup>
@@ -172,8 +172,8 @@ press Enter</td>
 </tr>
 <tr>
 <td><code>git add .</code></td>
-<td>Stage modifications of all files</td>
-<td>Click <strong>➕ (plus) icon</strong> next
+<td>Stage all modified and new files</td>
+<td>Click <strong>➕ (plus) icon</strong> next to
 <strong>Changes</strong></td>
 </tr>
 <tr>
@@ -227,7 +227,7 @@ message “add data to exp 1”.
 commit the change with a suitable commit message.
 
 <span class="theorem-title">**Exercise 11**</span> Add some text to
-`experiment_2.txt`. Then stage and commit the changes in one step.
+`experiment_2.txt`. Then, stage and commit the changes in one step.
 
 <span class="theorem-title">**Exercise 12**</span> View the full commit
 history of the repository.
@@ -247,12 +247,12 @@ commits.
 ## Reverting to Older Versions
 
 Git allows you to go back to a previous version of your work if needed.
-There are several ways of doing this. In this section, you will use one
+Git offers several ways to do this. In this section, you will use one
 such method where you undo the changes made in a particular commit
 without losing the commit history. This is where having descriptive
 commit messages can be useful in identifying which version you want to
-go back to. In this section, we cover reverting changes using Git using
-`revert`.
+go back to. In this section, we cover reverting changes using Git’s
+`revert` command.
 
 <table>
 <colgroup>
@@ -271,17 +271,17 @@ go back to. In this section, we cover reverting changes using Git using
 <tr>
 <td><code>git revert HEAD</code></td>
 <td>Creates a new commit that undoes the latest commit</td>
-<td>NA</td>
+<td>N/A</td>
 </tr>
 <tr>
 <td><code>git log --oneline</code></td>
 <td>Shows commit history in a short format</td>
-<td>NA</td>
+<td>N/A</td>
 </tr>
 <tr>
 <td><code>git revert &lt;commit-hash&gt;</code></td>
 <td>Creates a new commit that undoes only the specified commit</td>
-<td>NA</td>
+<td>N/A</td>
 </tr>
 </tbody>
 </table>
@@ -300,10 +300,18 @@ commit using `git revert HEAD`.
 <span class="theorem-title">**Exercise 20**</span> Check the status and
 commit history to confirm the revert.
 
-### Bonus Exercises
+## Bonus: Producing a Merge Conflict
+
+If the same lines have been changed multiple times, it may be that a
+commit can not be integrated in the Git history automatically. In this
+case, Git will indentify a **merge conflict** and prompt you to resolve
+it manually. In this section, we will try to provoke a merge conflict
+using the `revert` command.
+
+------------------------------------------------------------------------
 
 <span class="theorem-title">**Exercise 21**</span> Modify and commit
-changes to `experiment.txt` a few times.
+changes to `experiment_1.txt` a few times.
 
 <span class="theorem-title">**Exercise 22**</span> Use
 `git log --oneline` to identify a specific commit to undo.

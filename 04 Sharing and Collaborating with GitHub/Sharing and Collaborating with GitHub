@@ -57,8 +57,8 @@ repository (you can use the one from the previous notebook) in a new
 VSCode window.
 
 <span class="theorem-title">**Exercise 2**</span> Go to your GitHub page
-and xreate a new **public** repository on GitHub. IMPORTANT: initialize
-it **without** a REAME file - it should be **completely empty**. After
+and create a new **public** repository on GitHub. IMPORTANT: initialize
+it **without** a README file - it should be **completely empty**. After
 you create the repository, copy the URL.
 
 <span class="theorem-title">**Exercise 3**</span> In your local
@@ -71,7 +71,7 @@ repository to GitHub using `git push -u origin main`.
 that your repository now contains the pushed content.
 
 <span class="theorem-title">**Exercise 6**</span> Add a new text file
-with some content and commit the changes in local repository.
+with some content and commit the changes to the local repository.
 
 <span class="theorem-title">**Exercise 7**</span> Push the new commit to
 GitHub using `git push -u origin main`.
@@ -80,7 +80,7 @@ GitHub using `git push -u origin main`.
 that your repository now contains the new file.
 
 <span class="theorem-title">**Exercise 9**</span> Add new lines to the
-text file and commit the changes in local repository.
+text file and commit the changes in to the local repository.
 
 <span class="theorem-title">**Exercise 10**</span> Push the new commit
 to GitHub
@@ -128,7 +128,7 @@ Click <strong>Pull</strong></td>
 <span class="theorem-title">**Exercise 12**</span> Open a folder that is
 **not a Git repository** in a new VSCode window.
 
-<span class="theorem-title">**Exercise 13**</span> opy the URL of the
+<span class="theorem-title">**Exercise 13**</span> copy the URL of the
 repository containing the materials for this workshop:
 https://github.com/ibehave-ibots/iBOTS-Essential-Computer-Tools-for-Researchers-Workshop
 
@@ -200,7 +200,7 @@ updated with the original repository.
 <tr>
 <td><code>git remote add upstream &lt;original-repo-url&gt;</code></td>
 <td>Link the original repository as an upstream remote</td>
-<td>NA</td>
+<td>N/A</td>
 </tr>
 <tr>
 <td><code>git push origin main</code></td>
@@ -222,11 +222,11 @@ and copy the URL of your fork.
 window, clone your forked repository using `git clone <your-fork-url>`.
 
 <span class="theorem-title">**Exercise 25**</span> Make a change to the
-README (or any other file) and commit them.
+README (or any other file) and commit the change.
 
 <span class="theorem-title">**Exercise 26**</span> Push the changes to
-your forked repository using `git push origin main` and verify that your
-repository contains the changes
+your forked repository using `git push origin main` and verify on GitHub
+that your forked repository contains the changes
 
 ## Collaborating on GitHub
 
@@ -234,7 +234,7 @@ repository contains the changes
 GitHub repository** with a README file containing your name.
 
 <span class="theorem-title">**Exercise 28**</span> Fork the repository
-frm **another** member of your group.
+from **another** member of your group.
 
 <span class="theorem-title">**Exercise 29**</span> Clone the forked
 repository locally using `git clone <fork-url>`.
@@ -245,8 +245,8 @@ repository locally using `git clone <fork-url>`.
 <span class="theorem-title">**Exercise 31**</span> Push the changes to
 the forked repository.
 
-<span class="theorem-title">**Exercise 32**</span> Creates a **Pull
+<span class="theorem-title">**Exercise 32**</span> Create a **Pull
 Request (PR)** to the original repository from your fork.
 
-<span class="theorem-title">**Exercise 33**</span> If you received a PR,
-review it and merge it into your repository
+<span class="theorem-title">**Exercise 33**</span> If you received a PR
+on you repository, review it and merge it.
