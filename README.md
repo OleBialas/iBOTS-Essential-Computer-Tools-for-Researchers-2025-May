@@ -17,3 +17,5 @@
 2. Working with Jupyter notebooks
 3. Version control with Git
 4. Sharing and collaborating with GitHub
+
+Look at this cool new feature!
